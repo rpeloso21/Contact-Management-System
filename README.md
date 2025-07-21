@@ -62,7 +62,7 @@ Visit this URL to access the API documentation and test endpoints:
 
 ### Populate Route  
 
-- `POST /api/contacts/seed` - Populates the database with 50 random contacts using Java Faker
+- `POST /api/contacts/populate` - Populates the database with 50 random contacts using Java Faker
 
 ### Actuator Endpoints
 

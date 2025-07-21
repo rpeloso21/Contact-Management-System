@@ -1,7 +1,7 @@
 
 # Contact Management System
 
-A simple RESTful API built with Spring Boot that allows you to manage a list of contacts. Features include full CRUD operations, searching by last name, populating with mock data, and Swagger API documentation.
+A Spring Boot application that provides a RESTful API to manage contact information. This includes CRUD operations, search functionality, database seeding, and application monitoring via Spring Boot Actuator.
 
 ---
 
@@ -11,7 +11,8 @@ A simple RESTful API built with Spring Boot that allows you to manage a list of 
 - Search contacts by last name  
 - Bulk-populate the database with 50+ randomly generated contacts  
 - In-memory H2 database  
-- Swagger UI for API testing  
+- Swagger UI for API testing
+- Application monitoring and health checks via Spring Boot Actuator.
 
 ---
 
@@ -23,7 +24,8 @@ A simple RESTful API built with Spring Boot that allows you to manage a list of 
 - Spring Data JPA  
 - H2 Database  
 - Swagger (springdoc-openapi)  
-- Java Faker  
+- Java Faker
+- Spring Boot Actuator
 
 ---
 
@@ -60,7 +62,17 @@ Visit this URL to access the API documentation and test endpoints:
 
 ### Populate Route  
 
-- `POST /api/contacts/seed` - Populates the database with 50 random contacts using Java Faker  
+- `POST /api/contacts/seed` - Populates the database with 50 random contacts using Java Faker
+
+### Actuator Endpoints
+
+Spring Boot Actuator provides endpoints for monitoring and managing the application. Some commonly used endpoints:
+
+| Endpoint           | Description                              |
+|--------------------|------------------------------------------|
+| `/actuator/health` | Shows application health status          |
+| `/actuator/info`   | Displays custom application info         |
+| `/actuator/metrics`| Returns metrics like memory, threads, etc.|
 
 ---
 
